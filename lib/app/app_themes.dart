@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'app_box_decoration.dart';
+import 'app_button_themes.dart';
 import 'app_colors.dart';
 import 'app_text_themes.dart';
 
@@ -11,5 +12,6 @@ class AppTheme {
         useMaterial3: true,
         inputDecorationTheme: AppBoxDecoration.inputDecoration,
         textTheme: AppTextThemes.appTextTheme,
+        elevatedButtonTheme: AppButtonThemes.elevatedButtonTheme,
       );
 }

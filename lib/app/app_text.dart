@@ -10,6 +10,6 @@ class AppTexts {
 
   static const String googleLogin = 'Login with Google';
   static const String fbLogin = 'Login with Facebook';
-  static const String singIn = 'Sign in';
+  static const String sign = 'Sign in';
   static const String singUp = 'Sign up';
 }
