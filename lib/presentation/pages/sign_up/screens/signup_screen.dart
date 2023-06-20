@@ -1,17 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:shopping_app/app/app_button_themes.dart';
-import 'package:shopping_app/app/app_colors.dart';
-
 import 'package:shopping_app/app/app_sized_box.dart';
 import 'package:shopping_app/app/app_text.dart';
-
-import '../../../../app/app_size.dart';
-import '../../widgets/custom_elevated_button.dart';
+import '../../../../app/app_assets.dart';
+import '../../widgets/custom_outlined_button.dart';
+import '../../widgets/divider_with_text.dart';
 import '../../widgets/logo_container.dart';
+import '../widgets/button_with_fb_login.dart';
+import '../widgets/button_with_google_login.dart';
 import '../widgets/sign_in_button.dart';
 import '../widgets/sign_in_form.dart';
-import '../widgets/sing_in_subtitle.dart';
+import '../widgets/sign_in_subtitle.dart';
 import '../widgets/welcome_title.dart';
 
 class SignUpScreen extends StatelessWidget {
@@ -33,6 +31,12 @@ class SignUpScreen extends StatelessWidget {
               const SignInForm(),
               AppSizedbox.h16,
               const SignInButton(),
+              AppSizedbox.h20,
+              const DividerWithText(),
+              AppSizedbox.h16,
+              const ButtonForGoogleLogin(),
+              AppSizedbox.h8,
+              const ButtonForFbLogin(),
             ],
           ),
         ),

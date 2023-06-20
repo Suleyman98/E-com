@@ -16,6 +16,11 @@ class AppSizedbox {
   static SizedBox get w20 => SizedBox(width: 20.w);
   static SizedBox get w22 => SizedBox(width: 22.w);
   static SizedBox get w24 => SizedBox(width: 24.w);
+  static SizedBox get w30 => SizedBox(width: 30.w);
+  static SizedBox get w32 => SizedBox(width: 32.w);
+  static SizedBox get w34 => SizedBox(width: 34.w);
+  static SizedBox get w36 => SizedBox(width: 36.w);
+  static SizedBox get w72 => SizedBox(width: 72.w);
 
   static SizedBox get h2 => SizedBox(height: 2.h);
   static SizedBox get h4 => SizedBox(height: 4.h);

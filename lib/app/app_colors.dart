@@ -8,7 +8,8 @@ class AppColors {
   static Color get greyShade200 => Colors.grey.shade200;
   static Color get greyInputBorder => const Color.fromRGBO(144, 152, 177, 1);
   static Color get whiteColor => Colors.white;
-
+  static Color get neutralGrey => const Color.fromRGBO(144, 152, 177, 1);
   static Color get errorColor => Colors.red;
   static Color get primaryColor => const Color.fromRGBO(64, 191, 255, 1);
+  static Color get neutralLight => const Color.fromRGBO(235, 240, 255, 1);
 }

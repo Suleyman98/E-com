@@ -19,6 +19,7 @@ class CustomElevatedButton extends StatelessWidget {
         style: Theme.of(context).elevatedButtonTheme.style!.copyWith(
             backgroundColor:
                 MaterialStateProperty.all<Color>(AppColors.primaryColor),
+            elevation: MaterialStateProperty.all<double>(15),
             fixedSize: MaterialStateProperty.all<Size>(size)),
         onPressed: func,
         child: Text(

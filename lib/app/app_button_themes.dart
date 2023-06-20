@@ -14,4 +14,13 @@ class AppButtonThemes {
             elevation: 15,
             textStyle: AppTextThemes.appTextTheme.labelMedium),
       );
+  static get outlineButtonTheme => OutlinedButtonThemeData(
+        style: OutlinedButton.styleFrom(
+            side: const BorderSide(style: BorderStyle.solid, width: 0.6),
+            shape: RoundedRectangleBorder(
+                borderRadius: AppBorderRadius.fivePixel,
+                side: BorderSide(color: AppColors.neutralLight, width: 1)),
+            backgroundColor: AppColors.whiteColor,
+            textStyle: AppTextThemes.appTextTheme.labelMedium),
+      );
 }

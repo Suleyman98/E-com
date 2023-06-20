@@ -19,4 +19,8 @@ class AppFonts {
       color: AppColors.whiteColor,
       fontWeight: FontWeight.w700,
       fontSize: 14.sp);
+  static TextStyle get neutralGrey700 => GoogleFonts.poppins(
+      fontWeight: FontWeight.w700,
+      fontSize: 14.sp,
+      color: AppColors.neutralGrey);
 }

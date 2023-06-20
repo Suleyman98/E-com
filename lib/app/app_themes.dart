@@ -13,5 +13,6 @@ class AppTheme {
         inputDecorationTheme: AppBoxDecoration.inputDecoration,
         textTheme: AppTextThemes.appTextTheme,
         elevatedButtonTheme: AppButtonThemes.elevatedButtonTheme,
+        outlinedButtonTheme: AppButtonThemes.outlineButtonTheme,
       );
 }
