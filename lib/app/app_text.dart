@@ -7,6 +7,9 @@ class AppTexts {
   static const String passwordHint = 'Password';
   static const String fullNameHint = 'Full Name';
   static const String confirmPass = 'Password Again';
+  static const String forgotPass = 'Forgot Password';
+  static const String dontHaveAccount = "Don't have an account?";
+  static const String register = "Register";
 
   static const String googleLogin = 'Login with Google';
   static const String fbLogin = 'Login with Facebook';

@@ -16,7 +16,7 @@ class CustomOutlinedButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return OutlinedButton(
         style: OutlinedButton.styleFrom(
-            fixedSize: AppSize.elevatedButtonSize(context)),
+            elevation: 0, fixedSize: AppSize.elevatedButtonSize(context)),
         onPressed: () {},
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
