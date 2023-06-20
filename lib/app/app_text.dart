@@ -9,7 +9,10 @@ class AppTexts {
   static const String confirmPass = 'Password Again';
   static const String forgotPass = 'Forgot Password';
   static const String dontHaveAccount = "Don't have an account?";
+  static const String haveAccount = "Have an account?";
   static const String register = "Register";
+  static const String getStarted = "Let's get Started";
+  static const String newAccount = "Create a new account";
 
   static const String googleLogin = 'Login with Google';
   static const String fbLogin = 'Login with Facebook';

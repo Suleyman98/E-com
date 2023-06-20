@@ -21,6 +21,7 @@ class SignUpScreen extends StatelessWidget {
         child: SafeArea(
           child: Center(
             child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 AppSizedbox.h28,
                 AppSizedbox.h10,
