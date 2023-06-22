@@ -10,7 +10,7 @@ import '../widgets/forgot_password_button.dart';
 import '../widgets/register_button.dart';
 import '../widgets/sign_in_form.dart';
 import '../widgets/sign_in_subtitle.dart';
-import '../widgets/sign_up_button.dart';
+import '../widgets/sign_in_button.dart';
 import '../widgets/welcome_title.dart';
 
 class SignInScreen extends StatefulWidget {

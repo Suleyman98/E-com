@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:shopping_app/presentation/pages/sign_in/screens/sign_in_screen.dart';
 
 import '../app/app_themes.dart';
+import '../utilities/helpers/pager.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         return MaterialApp(
           title: 'Flutter Demo',
           theme: AppTheme.lightTheme,
-          home: const SignInScreen(),
+          home: Pager.register,
         );
       },
     );

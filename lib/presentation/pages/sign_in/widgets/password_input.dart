@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:shopping_app/cubits/login/login_cubit.dart';
 import 'package:shopping_app/utilities/extensions/string_extensions.dart';
 
-import '../../../../cubits/register/register_cubit.dart';
 import '../../widgets/custom_form_field.dart';
 
 class PasswordInput extends StatelessWidget {
@@ -12,11 +12,12 @@ class PasswordInput extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final registerCubit = context.read<RegisterCubit>();
+    TextEditingController passwordController =
+        context.read<LoginCubit>().passwordController;
     return CustomFormField(
       hint: 'Password',
       icon: Icons.lock,
-      controller: registerCubit.passwordController,
+      controller: passwordController,
       validator: (p0) {
         return p0.valueIsEmpty;
       },

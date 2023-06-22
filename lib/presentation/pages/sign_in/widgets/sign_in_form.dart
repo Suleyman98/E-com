@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:shopping_app/presentation/pages/sign_in/widgets/email_input.dart';
+import 'package:shopping_app/presentation/pages/sign_in/widgets/password_input.dart';
 
 import '../../../../app/app_padings.dart';
 import '../../../../app/app_sized_box.dart';
-import '../../widgets/custom_form_field.dart';
+import '../../../../cubits/login/login_cubit.dart';
 
 class SignInForm extends StatelessWidget {
   const SignInForm({
@@ -11,16 +14,19 @@ class SignInForm extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final loginCubit = context.read<LoginCubit>();
+    final loginFormKey = loginCubit.loginFormKey;
     return Padding(
       padding: AppPaddings.h16,
       child: Form(
+          key: loginFormKey,
           child: Column(
-        children: [
-          const CustomFormField(hint: 'Your Email', icon: Icons.email),
-          AppSizedbox.h10,
-          const CustomFormField(hint: 'Password', icon: Icons.lock),
-        ],
-      )),
+            children: [
+              const EmailInput(),
+              AppSizedbox.h10,
+              const PasswordInput(),
+            ],
+          )),
     );
   }
 }

@@ -5,11 +5,11 @@ import '../../../app/app_colors.dart';
 class CustomElevatedButton extends StatelessWidget {
   final Size size;
   final String label;
-  final Function()? func;
+  final Function()? onPressed;
   const CustomElevatedButton({
     super.key,
     required this.label,
-    this.func,
+    this.onPressed,
     required this.size,
   });
 
@@ -21,7 +21,7 @@ class CustomElevatedButton extends StatelessWidget {
                 MaterialStateProperty.all<Color>(AppColors.primaryColor),
             elevation: MaterialStateProperty.all<double>(15),
             fixedSize: MaterialStateProperty.all<Size>(size)),
-        onPressed: func,
+        onPressed: onPressed,
         child: Text(
           label,
           style: Theme.of(context).textTheme.labelMedium,
