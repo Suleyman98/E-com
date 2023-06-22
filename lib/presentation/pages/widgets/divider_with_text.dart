@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 import '../../../app/app_sized_box.dart';
-import '../sign_up/widgets/divider_text.dart';
-import '../sign_up/widgets/single_side_divider.dart';
+import '../sign_in/widgets/divider_text.dart';
+import '../sign_in/widgets/single_side_divider.dart';
 
 class DividerWithText extends StatelessWidget {
   const DividerWithText({

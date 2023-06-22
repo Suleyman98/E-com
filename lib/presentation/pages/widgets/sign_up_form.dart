@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 
 import '../../../app/app_padings.dart';
 import '../../../app/app_sized_box.dart';
-import '../login/widgets/confirm_password_input.dart';
-import '../login/widgets/email_input.dart';
-import '../login/widgets/full_name_input.dart';
-import '../login/widgets/password_input.dart';
+import '../sign_up/widgets/confirm_password_input.dart';
+import '../sign_up/widgets/email_input.dart';
+import '../sign_up/widgets/full_name_input.dart';
+import '../sign_up/widgets/password_input.dart';
 
 class SignUpForm extends StatelessWidget {
   const SignUpForm({

@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:flutter/cupertino.dart';
 
 import '../../../../app/app_size.dart';
 import '../../../../app/app_text.dart';
@@ -12,8 +12,6 @@ class SignInButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CustomElevatedButton(
-      label: AppTexts.sign,
-      size: AppSize.elevatedButtonSize(context),
-    );
+        label: AppTexts.sign, size: AppSize.elevatedButtonSize(context));
   }
 }

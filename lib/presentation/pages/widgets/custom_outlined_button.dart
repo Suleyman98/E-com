@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../app/app_size.dart';
-import '../sign_up/widgets/sign_in_logo.dart';
+import '../sign_in/widgets/sign_in_logo.dart';
 
 class CustomOutlinedButton extends StatelessWidget {
   final String logo;

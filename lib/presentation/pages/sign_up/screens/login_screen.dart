@@ -6,11 +6,11 @@ import 'package:shopping_app/presentation/pages/widgets/logo_container.dart';
 import '../../widgets/sign_up_form.dart';
 import '../widgets/get_started_title.dart';
 import '../widgets/new_acc_subtitle.dart';
-import '../widgets/sign_in_button.dart';
+import '../widgets/already_have_acc_btn.dart';
 import '../widgets/sign_up_button.dart';
 
-class LoginScreen extends StatelessWidget {
-  const LoginScreen({super.key});
+class SignUpScreen extends StatelessWidget {
+  const SignUpScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
