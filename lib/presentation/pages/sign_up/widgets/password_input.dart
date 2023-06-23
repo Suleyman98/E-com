@@ -14,6 +14,7 @@ class PasswordInput extends StatelessWidget {
   Widget build(BuildContext context) {
     final registerCubit = context.read<RegisterCubit>();
     return CustomFormField(
+      obscureText: true,
       hint: 'Password',
       icon: Icons.lock,
       controller: registerCubit.passwordController,

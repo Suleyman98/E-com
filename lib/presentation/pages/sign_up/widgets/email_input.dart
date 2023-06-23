@@ -14,6 +14,7 @@ class EmailInput extends StatelessWidget {
   Widget build(BuildContext context) {
     final registerCubit = context.read<RegisterCubit>();
     return CustomFormField(
+      obscureText: false,
       hint: 'Your Email',
       icon: Icons.email,
       controller: registerCubit.emailController,

@@ -15,6 +15,7 @@ class PasswordInput extends StatelessWidget {
     TextEditingController passwordController =
         context.read<LoginCubit>().passwordController;
     return CustomFormField(
+      obscureText: true,
       hint: 'Password',
       icon: Icons.lock,
       controller: passwordController,

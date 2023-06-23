@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         return MaterialApp(
           title: 'Flutter Demo',
           theme: AppTheme.lightTheme,
-          home: Pager.register,
+          home: Pager.login,
         );
       },
     );

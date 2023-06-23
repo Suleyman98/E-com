@@ -8,7 +8,16 @@ class AppBoxDecoration {
   AppBoxDecoration._();
 
   static InputDecorationTheme get inputDecoration => InputDecorationTheme(
-      prefixIconColor: AppColors.greyShade400,
+      prefixIconColor:
+          MaterialStateColor.resolveWith((Set<MaterialState> states) {
+        if (states.contains(MaterialState.focused)) {
+          return AppColors.primaryColor;
+        }
+        if (states.contains(MaterialState.error)) {
+          return Colors.red;
+        }
+        return AppColors.greyInputBorder;
+      }),
       hintStyle: AppFonts.intputHintStyle,
       border: OutlineInputBorder(
           borderRadius: AppBorderRadius.fivePixel,

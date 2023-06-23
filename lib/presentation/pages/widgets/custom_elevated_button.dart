@@ -4,6 +4,7 @@ import '../../../app/app_colors.dart';
 
 class CustomElevatedButton extends StatelessWidget {
   final Size size;
+  final bool? isLoading;
   final String label;
   final Function()? onPressed;
   const CustomElevatedButton({
@@ -11,6 +12,7 @@ class CustomElevatedButton extends StatelessWidget {
     required this.label,
     this.onPressed,
     required this.size,
+    this.isLoading,
   });
 
   @override
@@ -22,9 +24,11 @@ class CustomElevatedButton extends StatelessWidget {
             elevation: MaterialStateProperty.all<double>(15),
             fixedSize: MaterialStateProperty.all<Size>(size)),
         onPressed: onPressed,
-        child: Text(
-          label,
-          style: Theme.of(context).textTheme.labelMedium,
-        ));
+        child: isLoading == true
+            ? const CircularProgressIndicator()
+            : Text(
+                label,
+                style: Theme.of(context).textTheme.labelMedium,
+              ));
   }
 }

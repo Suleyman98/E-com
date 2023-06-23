@@ -17,23 +17,22 @@ class SignUpScreen extends StatelessWidget {
     return Scaffold(
       body: SingleChildScrollView(
         child: SafeArea(
-          child: Center(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                const LogoContainer(),
-                AppSizedbox.h16,
-                const GetStartedTitle(),
-                AppSizedbox.h16,
-                const NewAccountSubtitle(),
-                AppSizedbox.h28,
-                const SignUpForm(),
-                AppSizedbox.h10,
-                const SignUpButton(),
-                AppSizedbox.h10,
-                const AlreadySignInButton(),
-              ],
-            ),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              AppSizedbox.h28,
+              const LogoContainer(),
+              AppSizedbox.h16,
+              const GetStartedTitle(),
+              AppSizedbox.h16,
+              const NewAccountSubtitle(),
+              AppSizedbox.h28,
+              const SignUpForm(),
+              AppSizedbox.h10,
+              const SignUpButton(),
+              AppSizedbox.h10,
+              const AlreadySignInButton(),
+            ],
           ),
         ),
       ),

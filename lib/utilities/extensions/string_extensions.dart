@@ -23,7 +23,7 @@ extension StringExtension on String? {
   }
 
   String? get fullNameCheck {
-    if (this!.split(' ').length > 1) {
+    if (this!.split(' ').length < 2) {
       return Texts.nonValidName;
     }
     return null;

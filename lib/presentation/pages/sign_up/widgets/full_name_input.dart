@@ -14,6 +14,7 @@ class FullNameInput extends StatelessWidget {
   Widget build(BuildContext context) {
     final registerCubit = context.read<RegisterCubit>();
     return CustomFormField(
+      obscureText: false,
       hint: 'Full Name',
       icon: Icons.person,
       controller: registerCubit.fullNameController,

@@ -15,6 +15,7 @@ class EmailInput extends StatelessWidget {
     TextEditingController emailController =
         context.read<LoginCubit>().emailController;
     return CustomFormField(
+      obscureText: false,
       validator: (p0) {
         return p0.valueIsEmpty ?? p0.emailIsWrong;
       },

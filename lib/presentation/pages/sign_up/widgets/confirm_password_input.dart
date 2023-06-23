@@ -14,6 +14,7 @@ class ConfirmPasswordInput extends StatelessWidget {
   Widget build(BuildContext context) {
     final registerCubit = context.read<RegisterCubit>();
     return CustomFormField(
+      obscureText: true,
       hint: 'Password Again',
       icon: Icons.lock,
       controller: registerCubit.confirmPasswordController,
