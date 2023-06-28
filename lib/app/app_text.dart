@@ -18,4 +18,6 @@ class AppTexts {
   static const String fbLogin = 'Login with Facebook';
   static const String sign = 'Sign in';
   static const String singUp = 'Sign up';
+  static const String searchProduct = 'Search Product';
+  static const String moreCategory = 'More Category';
 }

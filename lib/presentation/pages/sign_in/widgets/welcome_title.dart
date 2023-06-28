@@ -11,6 +11,7 @@ class WelcomeTitle extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const CustomMediumTitle(
+      size: 24,
       title: AppTexts.welcome,
     );
   }

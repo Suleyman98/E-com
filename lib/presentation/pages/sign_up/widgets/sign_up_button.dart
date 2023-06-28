@@ -14,11 +14,16 @@ class SignUpButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final registerCubit = context.read<RegisterCubit>();
-    return CustomElevatedButton(
-        onPressed: () {
-          registerCubit.onRegisterPressed();
-        },
-        label: AppTexts.singUp,
-        size: AppSize.elevatedButtonSize(context));
+    return BlocBuilder<RegisterCubit, bool>(
+      builder: (context, state) {
+        return CustomElevatedButton(
+            isLoading: state,
+            onPressed: () {
+              registerCubit.onRegisterPressed(context);
+            },
+            label: AppTexts.singUp,
+            size: AppSize.elevatedButtonSize(context));
+      },
+    );
   }
 }

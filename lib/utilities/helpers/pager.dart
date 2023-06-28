@@ -7,11 +7,11 @@ import 'package:shopping_app/presentation/pages/sign_up/screens/sign_up_screen.d
 
 class Pager {
   Pager._();
-  static Widget get login => BlocProvider(
+  static Widget get login => BlocProvider<LoginCubit>(
         create: (context) => LoginCubit(),
         child: const SignInScreen(),
       );
-  static Widget get register => BlocProvider(
+  static Widget get register => BlocProvider<RegisterCubit>(
         create: (context) => RegisterCubit(),
         child: const SignUpScreen(),
       );

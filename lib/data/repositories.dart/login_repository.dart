@@ -7,5 +7,10 @@ class LoginRepository implements LoginContract {
   Future<bool> login(String email, String password) {
     return LoginDataSource().login(email, password);
   }
+
+  @override
+  Future<bool> register(String email, String password) {
+    return LoginDataSource().register(email, password);
+  }
   //
 }

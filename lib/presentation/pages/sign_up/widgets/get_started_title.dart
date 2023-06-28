@@ -10,6 +10,9 @@ class GetStartedTitle extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const CustomMediumTitle(title: AppTexts.getStarted);
+    return const CustomMediumTitle(
+      title: AppTexts.getStarted,
+      size: 24,
+    );
   }
 }

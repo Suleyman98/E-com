@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 
 class CustomMediumTitle extends StatelessWidget {
+  final double size;
   final String title;
   const CustomMediumTitle({
     super.key,
     required this.title,
+    required this.size,
   });
 
   @override
@@ -12,7 +14,7 @@ class CustomMediumTitle extends StatelessWidget {
     TextTheme textTheme = Theme.of(context).textTheme;
     return Text(
       title,
-      style: textTheme.titleMedium,
+      style: textTheme.titleMedium!.copyWith(fontSize: size),
     );
   }
 }
