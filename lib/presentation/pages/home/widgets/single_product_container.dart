@@ -21,6 +21,7 @@ class SingleProductContainer extends StatelessWidget {
       margin: AppPaddings.h8,
       padding: AppPaddings.v24 + AppPaddings.h8,
       width: 140.w,
+      height: 230.h,
       decoration: BoxDecoration(
           border: Border.all(color: AppColors.greyShade400),
           borderRadius: AppBorderRadius.fivePixel),
