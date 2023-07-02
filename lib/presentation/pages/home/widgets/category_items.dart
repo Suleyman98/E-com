@@ -5,8 +5,9 @@ import '../../../../app/app_padings.dart';
 import '../../widgets/custom_category_container_circle.dart';
 
 class CategoryItems extends StatelessWidget {
+  final List<String> categories;
   const CategoryItems({
-    super.key,
+    super.key, required this.categories,
   });
 
   @override
@@ -17,7 +18,7 @@ class CategoryItems extends StatelessWidget {
         padding: AppPaddings.h8,
         child: Row(
           children: List.generate(
-              35,
+              categories.length,
               (index) => const CustomCategoryContainerCircle(
                     assetName: AppAssets.categoryIcon,
                     categoryName: 'Man Shirt',

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:shopping_app/presentation/pages/home/screens/home.dart';
 
 import '../app/app_themes.dart';
 import '../utilities/helpers/pager.dart';
@@ -19,9 +18,9 @@ class MyApp extends StatelessWidget {
         return MaterialApp(
           title: 'Flutter Demo',
           theme: AppTheme.lightTheme,
-          initialRoute: '/register',
+          initialRoute: '/home',
           routes: {
-            '/home': (context) => const HomePage(),
+            '/home': (context) => Pager.home,
             '/register': (context) => Pager.register,
             '/login': (context) => Pager.login
           },

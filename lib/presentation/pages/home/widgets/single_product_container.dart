@@ -7,12 +7,15 @@ import '../../../../app/app_assets.dart';
 import '../../../../app/app_border_radius.dart';
 import '../../../../app/app_colors.dart';
 import '../../../../app/app_sized_box.dart';
+import '../../../../data/models/product_model.dart';
 import 'before_discount_price.dart';
 import 'discount_percentage.dart';
 
 class SingleProductContainer extends StatelessWidget {
+  final ProductModel? product;
   const SingleProductContainer({
     super.key,
+    this.product,
   });
 
   @override
@@ -26,11 +29,20 @@ class SingleProductContainer extends StatelessWidget {
           border: Border.all(color: AppColors.greyShade400),
           borderRadius: AppBorderRadius.fivePixel),
       child: Column(children: [
-        Image.asset(AppAssets.productImage),
+        Image.network(
+          product != null
+              ? product!.image!
+              : 'https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg',
+          height: 100.h,
+          width: 100.w,
+        ),
         AppSizedbox.h8,
-        const ProductTitle(),
+        ProductTitle(
+            title: product != null
+                ? '${product!.title!.substring(0, 18)}...'
+                : 'Unknown'),
         AppSizedbox.h8,
-        const ProductPrice(),
+        ProductPrice(price: product != null ? product!.price : 0),
         AppSizedbox.h8,
         Padding(
           padding: AppPaddings.h16,

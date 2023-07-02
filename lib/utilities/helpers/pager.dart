@@ -5,6 +5,9 @@ import 'package:shopping_app/cubits/register/register_cubit.dart';
 import 'package:shopping_app/presentation/pages/sign_in/screens/sign_in_screen.dart';
 import 'package:shopping_app/presentation/pages/sign_up/screens/sign_up_screen.dart';
 
+import '../../cubits/home/home_cubit.dart';
+import '../../presentation/pages/home/screens/home.dart';
+
 class Pager {
   Pager._();
   static Widget get login => BlocProvider<LoginCubit>(
@@ -14,5 +17,9 @@ class Pager {
   static Widget get register => BlocProvider<RegisterCubit>(
         create: (context) => RegisterCubit(),
         child: const SignUpScreen(),
+      );
+  static Widget get home => BlocProvider<HomeCubit>(
+        create: (context) => HomeCubit(),
+        child: const HomePage(),
       );
 }

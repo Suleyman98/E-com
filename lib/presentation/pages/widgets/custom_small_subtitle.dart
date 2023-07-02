@@ -11,7 +11,10 @@ class CustomSmallSubtitle extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       subtitle,
-      style: Theme.of(context).textTheme.bodySmall,
+      style: Theme.of(context)
+          .textTheme
+          .bodySmall!
+          .copyWith(decoration: TextDecoration.lineThrough),
     );
   }
 }
